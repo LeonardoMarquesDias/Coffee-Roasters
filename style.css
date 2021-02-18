@@ -18,7 +18,9 @@ body {
 }
 
 h1 {
-
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333D4B;
 }
 
 h2 {
@@ -74,7 +76,6 @@ section.hero .container {
 }
 
 section.hero .content {
-  
   width: 50%;
   padding-left: 80px;
   flex-direction: column;
@@ -82,7 +83,7 @@ section.hero .content {
 
 section.hero .content p {
   width: 70%;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   line-height: 1.2rem;
   margin: 25px 0px;
   color: #FEFCF7;
@@ -94,4 +95,94 @@ section.hero button {
   border-radius: 5px;
   color: #FEFCF7;
   background-color: #0E8784;
+  cursor: pointer;
+}
+
+section.collection {
+  margin-top: 100px;
+}
+
+section.collection .container {
+  max-width: 1280px;
+  width: 80%;
+  margin: auto;
+}
+
+section.collection .content {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  grid-column-gap: 30px;
+
+  text-align: center;
+  justify-content: center;
+}
+
+section.collection .container .content img {
+  max-width: 200px;
+  max-height: 150px;
+  margin-bottom: 40px;
+}
+
+section.collection .container .content p {
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  margin-top: 20px;
+  color: #333D4B;
+}
+
+section.collection .container > h3{
+  font-size: 10rem;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+section.choose-us {
+  
+}
+
+section.choose-us .container {
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #2C343E;
+}
+
+section.choose-us .content {
+  text-align: center;
+  max-width: 1280px;
+  width: 90%;
+}
+
+section.choose-us .content p {
+  width: 40%;
+  margin: auto;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  color: #FEFCF7;
+}
+
+section.choose-us .content-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 27.5%);
+  grid-column-gap: 30px;
+
+  text-align: center;
+  justify-content: center;
+}
+
+section.choose-us .content-1 > div {
+  background-color: #0E8784;
+  border-radius: 5px;
+}
+
+section.choose-us .content-1 h1, p {
+  color: #FEFCF7;
+}
+
+section.choose-us .content-1 img {
+  width: 71px;
+  height: 72px;
 }
