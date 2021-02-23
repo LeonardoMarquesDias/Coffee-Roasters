@@ -1,39 +1,26 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  outline: 0;
-}
-
-html,
-body {
-  height: 100vh;
-  font-family: "";
-  text-rendering: optimizelegibility;
-  -webkit-font-smoothing: antialiased;
-}
-
-body {
-  background-color: #F2F2F2;
-}
 
 h1 {
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #333D4B;
+  font-family: 'Fraunces', serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--title-dark);
 }
 
 h2 {
-
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--title-light);
 }
 
 h3 {
+  font-family: 'Fraunces', serif;
   font-size: 4rem;
-  color: #FEFCF7;
+  color: var(--title-light);
 }
 
 header {
-  margin: 30px 0px;
+  margin: 1.8rem 0rem;
 }
 
 header .container {
@@ -49,12 +36,10 @@ header .container {
 header nav a {
   font-size: 0.7rem;
   font-weight: 600;
-  font-family: 'Barlow', sans-serif;
 
-  padding: 10px 0px 10px 15px;
-  margin-left: 10px;
-  text-decoration: none;
-  color: #83888F;
+  margin-left: 0.6rem;
+  padding: 0.6rem 0rem 0.6rem 0.9rem;
+  color: var(--grey);
 }
 
 section.hero {
@@ -72,12 +57,12 @@ section.hero .container {
 
   background-image: url(./assets/home/desktop/image-hero-coffeepress.jpg);
   background-size: cover;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 section.hero .content {
   width: 50%;
-  padding-left: 80px;
+  padding-left: 5rem;
   flex-direction: column;
 }
 
@@ -85,17 +70,16 @@ section.hero .content p {
   width: 70%;
   font-size: 0.8rem;
   line-height: 1.2rem;
-  margin: 25px 0px;
-  color: #FEFCF7;
+  margin: 1.5rem 0rem;
+  color: var(--text);
 }
 
 section.hero button {
   padding: 0.7rem 1.5rem;
-  border: 1px solid black;
+  border: 1px solid var(--green);
   border-radius: 5px;
-  color: #FEFCF7;
-  background-color: #0E8784;
-  cursor: pointer;
+  color: var(--text);
+  background-color: var(--green);
 }
 
 section.collection {
@@ -111,7 +95,7 @@ section.collection .container {
 section.collection .content {
   display: grid;
   grid-template-columns: repeat(4, 20%);
-  grid-column-gap: 30px;
+  grid-column-gap: 1.8rem;
 
   text-align: center;
   justify-content: center;
@@ -120,15 +104,16 @@ section.collection .content {
 section.collection .container .content img {
   max-width: 200px;
   max-height: 150px;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
+  padding: 5px;
 }
 
 section.collection .container .content p {
   font-weight: 400;
   font-size: 0.8rem;
   line-height: 1.2rem;
-  margin-top: 20px;
-  color: #333D4B;
+  margin-top: 1.25rem;
+  color: var(--title-dark)
 }
 
 section.collection .container > h3{
@@ -139,50 +124,74 @@ section.collection .container > h3{
 }
 
 section.choose-us {
-  
+  margin-top: 8.75rem;
 }
 
 section.choose-us .container {
   max-width: 1280px;
   width: 90%;
   margin: auto;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #2C343E;
 }
 
 section.choose-us .content {
   text-align: center;
-  max-width: 1280px;
-  width: 90%;
+  height: 400px;
+}
+
+section.choose-us .content h2 {
+  padding-top: 4rem;
+  color: var(--title-light);
+  
+}
+section.choose-us .content p:nth-child(2) {
+  width: 40%;
 }
 
 section.choose-us .content p {
-  width: 40%;
   margin: auto;
-  font-size: 0.8rem;
+  font-size: 0.76rem;
+  font-weight: 400;
   line-height: 1.2rem;
-  color: #FEFCF7;
+  color: var(--text);
+  padding: 1.25rem;
 }
 
 section.choose-us .content-1 {
   display: grid;
-  grid-template-columns: repeat(3, 27.5%);
-  grid-column-gap: 30px;
+  grid-template-columns: repeat(3, 26.5%);
+  grid-column-gap: 1.8rem;
 
   text-align: center;
   justify-content: center;
 }
 
 section.choose-us .content-1 > div {
-  background-color: #0E8784;
+  background-color: var(--green);
   border-radius: 5px;
 }
 
-section.choose-us .content-1 h1, p {
-  color: #FEFCF7;
+section.choose-us .content-1 h1 {
+  color: var(--title-light)
+}
+
+section.choose-us .content-1 p {
+  max-width: 91%;
+  
 }
 
 section.choose-us .content-1 img {
   width: 71px;
   height: 72px;
+  padding: 0.6rem;
+  margin: 1.8rem 0rem;
 }
+
+section.choose-us .content-1 div {
+  height: 280px;
+  margin-top: 2.5rem;
+}
+
+
+
