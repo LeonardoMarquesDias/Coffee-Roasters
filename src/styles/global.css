@@ -9,10 +9,11 @@
   --background-light: #F2F2F2;
   --background-dark: #2C343E;
   --title-light: #FEFCF7;
-  --title-dark: #333D4B;
+  --title-text-dark: #333D4B;
   --text: #FEFCF7;
   --green: #0E8784;
   --grey: #83888F;
+  --number-line: #FDD6BA;
 }
 
 @media(max-width: 1080px) {
