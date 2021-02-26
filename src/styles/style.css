@@ -43,7 +43,7 @@ header nav a {
 }
 
 section.hero {
-  margin-bottom: 30px;
+  margin-bottom: 4rem;
 }
 
 section.hero .container {
@@ -82,20 +82,22 @@ section.hero button {
   background-color: var(--green);
 }
 
-section.collection {
-  
-}
-
 section.collection .container {
   max-width: 1280px;
   width: 80%;
   margin: auto;
 }
 
-section.colletion h3.your-colletion {
-  font-size: 1rem;
-  color: blue
+section.collection .container div {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 8.30rem;
+  text-align: center;
+  margin-bottom: -4rem;
+}
 
+section.collection .container div span {  
+  color: #97979773;
 }
 
 section.collection .content {
@@ -111,7 +113,7 @@ section.collection .container .content img {
   width: 100%;
   max-height: 9.375rem;
   background-size: cover;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
   padding: 5px;
 }
 
@@ -130,7 +132,7 @@ section.collection .container > h3{
 }
 
 section.choose-us {
-  margin-top: 8.75rem;
+  margin-top: 16rem;
 }
 
 section.choose-us .container {
@@ -201,13 +203,12 @@ section.choose-us .content-1 div {
 }
 
 section.how-works {
-  margin: 13rem 0rem;
+  margin: 15rem 0rem 10rem 0rem;
 }
 
 section.how-works .container {
   max-width: 1280px;
   width: 96%;
-  height: auto;
   margin: auto;
 }
 section.how-works .container h1:first-child {
@@ -276,28 +277,43 @@ section.how-works .content button {
   border-radius: 5px;
   color: var(--text);
   background-color: var(--green);
-  }
+}
 
 footer {
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
   background-color: #2C343E;
 }
 
-footer .conteinar {
-  max-width: 1280px;
-  width: 90%;
-  height: 6rem;
-
+footer #container  {
+  width: 86%;
   margin: auto;
+  padding: 1.7rem 0rem;
   display: flex;
+  justify-content: space-between; 
   align-items: center;
-  justify-content: space-between;
 }
 
-footer .logo-footer {
-  
+footer .content-left {
+  display: flex;
 }
 
-footer .logo-nav {
-  display: flex;
-  align-items: center;
+footer .content-left nav a {
+  margin-left: 0.6rem;
+  padding: 0.6rem 0rem 0.6rem 0.9rem;
+
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--grey);
+}
+
+footer .content-left img {
+  width: 200px;
+  height: 26px;
+  margin-right: 2.5rem;
+}
+
+footer .content-right img {
+  margin-left: 1rem;
 }
