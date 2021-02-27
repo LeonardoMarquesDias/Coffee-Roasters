@@ -1,23 +1,4 @@
-
-h1 {
-  font-family: 'Fraunces', serif;
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--title-text-dark);
-}
-
-h2 {
-  font-family: 'Fraunces', serif;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--title-light);
-}
-
-h3 {
-  font-family: 'Fraunces', serif;
-  font-size: 4rem;
-  color: var(--title-light);
-}
+            /* HEADER */
 
 header {
   margin: 1.8rem 0rem;
@@ -34,13 +15,16 @@ header .container {
 }
 
 header nav a {
+  margin-left: 0.6rem;
+  padding: 0.6rem 0rem 0.6rem 0.9rem;
+
   font-size: 0.7rem;
   font-weight: 600;
 
-  margin-left: 0.6rem;
-  padding: 0.6rem 0rem 0.6rem 0.9rem;
   color: var(--grey);
 }
+
+            /* HERO */ 
 
 section.hero {
   margin-bottom: 4rem;
@@ -82,6 +66,8 @@ section.hero button {
   background-color: var(--green);
 }
 
+            /* COLLETION */
+
 section.collection .container {
   max-width: 1280px;
   width: 80%;
@@ -97,7 +83,9 @@ section.collection .container div {
 }
 
 section.collection .container div span {  
-  color: #97979773;
+  background: -webkit-linear-gradient(#c0c0c0, rgb(255, 255, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 section.collection .content {
@@ -130,6 +118,8 @@ section.collection .container > h3{
   margin: auto;
   text-align: center;
 }
+
+            /* WHY CHOOSE US */
 
 section.choose-us {
   margin-top: 16rem;
@@ -201,6 +191,8 @@ section.choose-us .content-1 div {
   height: 280px;
   margin-top: 2.5rem;
 }
+
+            /* HOW IT WORKS */
 
 section.how-works {
   margin: 15rem 0rem 10rem 0rem;
@@ -279,6 +271,8 @@ section.how-works .content button {
   background-color: var(--green);
 }
 
+            /* FOOTER */
+
 footer {
   max-width: 1280px;
   width: 90%;
@@ -316,4 +310,10 @@ footer .content-left img {
 
 footer .content-right img {
   margin-left: 1rem;
+}
+
+            /* MAIN */
+
+main {
+  padding-bottom: 3rem;
 }
