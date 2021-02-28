@@ -30,8 +30,9 @@
 
 body {
   height: 100vh;
-  background:  var(--background-light);
-  color: var(--text)
+  color: var(--text);
+  background: var(--background-light);
+  
 }
 
 body, input, textarea, button {
