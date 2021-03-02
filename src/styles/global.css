@@ -40,6 +40,7 @@ body, input, textarea, button {
 }
 
 button {
+  font-size: 1.2rem;
   cursor: pointer;
   font-family: 'Fraunces', serif;
 }
@@ -51,7 +52,7 @@ a {
 
 h1 {
   font-family: 'Fraunces', serif;
-  font-size: 1.35rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: var(--title-text-dark);
 }
@@ -67,4 +68,8 @@ h3 {
   font-family: 'Fraunces', serif;
   font-size: 4rem;
   color: var(--title-light);
+}
+
+p {
+  font-size: 1rem;
 }

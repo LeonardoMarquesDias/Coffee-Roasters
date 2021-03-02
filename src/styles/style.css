@@ -7,8 +7,8 @@ header {
 header .container {
   max-width: 1280px;
   width: 90%;
-
   margin: auto;
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,23 +17,21 @@ header .container {
 header nav a {
   margin-left: 0.6rem;
   padding: 0.6rem 0rem 0.6rem 0.9rem;
-
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 600;
-
   color: var(--grey);
 }
 
             /* HERO */ 
 
 section.hero {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 section.hero .container {
   max-width: 1280px;
   width: 90%;
-  height: 450px;
+  height: 600px;
 
   display: flex;
   align-items: center;
@@ -41,11 +39,13 @@ section.hero .container {
 
   background-image: url(/public/home/desktop/image-hero-coffeepress.jpg);
   background-size: cover;
+  background-size: 100% 100%;
   border-radius: 10px;
 }
 
 section.hero .content {
-  width: 50%;
+  width: 85%;
+  max-width: 50%;
   padding-left: 5rem;
   flex-direction: column;
 }
@@ -53,8 +53,7 @@ section.hero .content {
 section.hero .content p {
   width: 70%;
   margin: 1.5rem 0rem;
-  font-size: 0.8rem;
-  line-height: 1.2rem;
+  line-height: 1.5rem;
   color: var(--text);
 }
 
@@ -68,62 +67,67 @@ section.hero button {
 
             /* COLLETION */
 
+section.collection {
+  margin-bottom: 8rem;
+}
+
 section.collection .container {
   max-width: 1280px;
-  width: 80%;
+  max-width: 90%;
   margin: auto;
 }
 
-section.collection .container div {
-  font-family: 'Fraunces', serif;
-  font-weight: 600;
-  font-size: 8.30rem;
-  text-align: center;
-  margin-bottom: -4rem;
+section.collection .content {
+  max-width: 85%;
+  margin: auto;
 }
 
-section.collection .container div span {  
+section.collection .container-your {
+  width: 100%;
+  text-align: center;
+}
+
+section.collection .container div span { 
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 11vw;
+  text-align: center;
+
   background: -webkit-linear-gradient(#c0c0c0, rgb(255, 255, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-section.collection .content {
-  display: grid;
-  grid-template-columns: repeat(4, 20%);
-  grid-column-gap: 1.8rem;
-
+section.collection .content-itens {
+  width: 100%;
   text-align: center;
-  justify-content: center;
+
+  margin-top: -4rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  justify-content: space-between; 
 }
 
-section.collection .container .content img {
+section.collection .container .content-itens img {
   width: 100%;
-  max-height: 9.375rem;
+  align-items: center;
+  justify-content: center;
   padding: 5px;
   margin-bottom: 1rem;
-  background-size: cover;
 }
 
-section.collection .container .content p {
+section.collection .container .content-itens p {
   font-weight: 400;
-  font-size: 0.8rem;
-  line-height: 1.2rem;
+  line-height: 1.5rem;
   margin-top: 1.25rem;
+  font-size: 1vw;
   color: var(--title-text-dark);
-}
-
-section.collection .container > h3 {
-  margin: auto;
-  font-size: 8rem;
-  text-align: center;
 }
 
             /* WHY CHOOSE US */
 
-section.choose-us {
-  margin-top: 16rem;
-}
 
 section.choose-us .container {
   width: 90%;
@@ -134,25 +138,25 @@ section.choose-us .container {
 }
 
 section.choose-us .content {
-  height: 400px;
+  height: 34rem;
   text-align: center;
 }
 
 section.choose-us .content h2 {
-  padding-top: 4rem;
+  padding-top: 5rem;
   color: var(--title-light); 
 }
 
 section.choose-us .content p:nth-child(2) {
   width: 40%;
+  padding: 2rem 0rem;
 }
 
 section.choose-us .content p {
   margin: auto;
   padding: 1.25rem;
-  font-size: 0.76rem;
   font-weight: 400;
-  line-height: 1.2rem;
+  line-height: 1.5rem;
   color: var(--text);
 }
 
@@ -175,19 +179,18 @@ section.choose-us .content-1 h1 {
 }
 
 section.choose-us .content-1 p {
-  max-width: 91%;
+  max-width: 80%;
 }
 
 section.choose-us .content-1 img {
   width: 4.438rem;
-  height: 4.5rem;
-  padding: 0.6rem;
-  margin: 1.8rem 0rem;
+  margin: 4rem 0rem;
+  align-items: center;
   background-image: 100% 100%;
 }
 
 section.choose-us .content-1 div {
-  height: 280px;
+  height: 25rem;
   margin-top: 2.5rem;
 }
 
@@ -198,28 +201,30 @@ section.how-works {
 }
 
 section.how-works .container {
-  width: 96%;
+  width: 70%;
   margin: auto;
   max-width: 1280px;
 }
+
+section.how-works .content {
+  margin: left;
+  max-width: 1280px;
+}
+
 section.how-works .container h1:first-child {
   margin: 3rem 0rem;
   color: var(--grey);
 }
 
-section.how-works .container > div {
+section.how-works .content > div {
   display: grid;
   grid-template-columns: repeat(3, 26.5%);
 
   align-items: left;
-  justify-content: center;
+  justify-content: left;
 }
 
-section.how-works .content .container-circle {
-  width: 100%;
-}
-
-section.how-works .content .circle {
+section.how-works .content-grid .circle {
   width: 1rem;
   height: 1rem;
   border: 1px solid var(--green);
@@ -227,42 +232,41 @@ section.how-works .content .circle {
   background-color: var(--background-light);
 }
 
-section.how-works .content .line {
+section.how-works .content-grid .line {
   height: 1px;
   margin-top: -0.5rem;
   margin-left: 1rem;
   background-color: var(--number-line);
 }
 
-section.how-works .content .last-line {
+section.how-works .content-grid .last-line {
   height: 1px;
   margin-top: -0.5rem;
   margin-left: 1rem;
   background-color: var(--background-light)
 }
 
-section.how-works .content span {
+section.how-works .content-grid span {
   font-family: 'Fraunces', serif;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 4rem;
   color: var(--number-line);
 
 }
-section.how-works .content h1 {
+section.how-works .content-grid h1 {
   width: 50%;
   padding-top: 1.5rem;
 }
 
-section.how-works .content p {
+section.how-works .content-grid p {
   width: 70%;
   padding: 2.5rem 0rem;
-  font-size: 0.76rem;
   font-weight: 400;
-  line-height: 1.2rem;
+  line-height: 1.5rem;
   color: var(--title-text-dark);
 }
 
-section.how-works .content button {
+section.how-works .content-grid button {
   padding: 0.7rem 1.5rem;
   border: 1px solid var(--green);
   border-radius: 5px;
@@ -280,7 +284,7 @@ footer {
 }
 
 footer #container {
-  width: 86%;
+  width: 85%;
   margin: auto;
   padding: 1.7rem 0rem;
 
@@ -296,7 +300,6 @@ footer .content-left {
 footer .content-left nav a {
   margin-left: 0.6rem;
   padding: 0.6rem 0rem 0.6rem 0.9rem;
-
   font-size: 0.7rem;
   font-weight: 600;
   color: var(--grey);
@@ -305,7 +308,7 @@ footer .content-left nav a {
 footer .content-left img {
   width: 200px;
   height: 26px;
-  margin-right: 2.5rem;
+  
 }
 
 footer .content-right img {

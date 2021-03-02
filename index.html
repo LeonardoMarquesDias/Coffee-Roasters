@@ -22,8 +22,14 @@
       </div>
       
       <nav>
-        <a href="#">HOME</a>
-        <a href="#">ABOUT US</a>
+        <a href="./index.html">HOME</a>
+        <a href="./src/pages/about.html">ABOUT US</a>
+        <a href="#">CREATE YOUR PLAN</a>
+      </nav>
+
+      <nav class="toggle-nav" style="display: none;" >
+        <a href="./index.html">HOME</a>
+        <a href="./src/pages/about.html">ABOUT US</a>
         <a href="#">CREATE YOUR PLAN</a>
       </nav>
     </div><!--container-->  
@@ -44,41 +50,43 @@
 
     <section class="collection"> 
       <div class="container">
-        <div class="container-your">
-          <div> 
-            <span>our colletion</span>
-          </div>
-        </div>
-
         <div class="content">
-          <div>
-            <img src="/public/home/desktop/image-gran-espresso.png" alt="">
-            <h1>Gran Espresso</h1>
-            <p>
-              Light and flavorful blend with cocoa and black pepper for an intense experience.
-            </p>
+          <div class="container-your">
+            <div> 
+              <span>our colletion</span>
+            </div>
           </div>
 
-          <div>
-            <img src="/public/home/desktop/image-planalto.png" alt="">
-            <h1>Planalto</h1>
-            <p>
-              Brazilian dark roast with rich and velvety body, and hints of fruits and nuts.
-            </p>
-          </div>
-          <div>
-            <img src="/public/home/desktop/image-piccollo.png" alt="">
-            <h1>Picollo</h1>
-            <p>
-              Mild and smooth blend featuring notes of toasted almond and dried cherry.
-            </p>
-          </div>
-          <div>
-            <img src="/public/home/desktop/image-danche.png" alt="">
-            <h1>Danche</h1>
-            <p>
-              Ethiopian hand-harvested blend densely packed with vibrant fruit notes.
-            </p>
+          <div class="content-itens">
+            <div>
+              <img src="/public/home/desktop/image-gran-espresso.png" alt="">
+              <h1>Gran Espresso</h1>
+              <p>
+                Light and flavorful blend with cocoa and black pepper for an intense experience.
+              </p>
+            </div>
+
+            <div>
+              <img src="/public/home/desktop/image-planalto.png" alt="">
+              <h1>Planalto</h1>
+              <p>
+                Brazilian dark roast with rich and velvety body, and hints of fruits and nuts.
+              </p>
+            </div>
+            <div>
+              <img src="/public/home/desktop/image-piccollo.png" alt="">
+              <h1>Picollo</h1>
+              <p>
+                Mild and smooth blend featuring notes of toasted almond and dried cherry.
+              </p>
+            </div>
+            <div>
+              <img src="/public/home/desktop/image-danche.png" alt="">
+              <h1>Danche</h1>
+              <p>
+                Ethiopian hand-harvested blend densely packed with vibrant fruit notes.
+              </p>
+            </div>
           </div>
         </div>
       </div><!--container-->
@@ -123,70 +131,72 @@
     </section>
 
     <section class="how-works">
-      <div class="container">
-        <div>
-          <h1>How it works</h1>
-        </div>
-
-        <div class="content">
-          <div>    
-            <div class="circle"></div>
-            <div class="line"></div>
+        <div class="container">
+          <div class="content">
             <div>
-            </br></br>
-            <span>01</span>
-            <h1>Pick your coffe</h1>
-            <p>
-              Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.
-            </p>
-            <button type="button">Create your plan</button>
+              <h1>How it works</h1>
             </div>
-          </div>
 
-          <div>
-            <div class="circle"></div>
-            <div class="line"></div>
-          </br></br>
-            <span>02</span>
-            <h1>Chosse the frequency</h1>
-            <p>
-              Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.
-            </p>
-          </div>
+            <div class="content-grid">
+              <div class="content-left">    
+                <div class="circle"></div>
+                <div class="line"></div>
+                <div>
+                </br></br>
+                <span>01</span>
+                <h1>Pick your coffe</h1>
+                <p>
+                  Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.
+                </p>
+                <button type="button">Create your plan</button>
+                </div>
+              </div><!--content-left-->
 
-          <div>
-            <div class="circle"></div>
-            <div class="last-line"></div>
-            </br></br>
-            <span>03</span>
-            <h1>Receive end enjoy!</h1>
-            <p>
-              We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.
-            </p>
-          </div>
-        </div><!--content-->
+              <div class="content-middle">
+                <div class="circle"></div>
+                  <div class="line"></div>
+                  </br></br>
+                  <span>02</span>
+                  <h1>Chosse the frequency</h1>
+                  <p>
+                    Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.
+                  </p>
+              </div><!--content-middle-->
+
+              <div class="content-right">
+                <div class="circle"></div>
+                  <div class="last-line"></div>
+                  </br></br>
+                  <span>03</span>
+                  <h1>Receive end enjoy!</h1>
+                  <p>
+                    We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.
+                  </p>
+              </div><!--content-right-->
+            </div><!--content-grid-->
+          </div><!--content-->
       </div><!--container-->
     </section><!--how-works-->
-
-    <footer>
-      <div id="container">
-        <div class="content-left" >
-          <img src="/public/home/desktop/logo-footer.svg" alt="">
-          <nav>
-            <a href="">HOME</a>
-            <a href="">ABOUT US</a>
-            <a href="">CREATE YOUR PLAN</a>
-          </nav>
-        </div><!--content-left-->
-
-        <div class="content-right">
-          <img src="./public/shared/desktop/icon-facebook.svg" alt="">
-          <img src="./public/shared/desktop/icon-twitter.svg" alt="">
-          <img src="./public/shared/desktop/icon-instagram.svg" alt="">
-        </div><!--content-right-->
-        
-      </div><!--container-->
-    </footer>
   </main>
+
+  <footer>
+    <div id="container">
+      <div class="content-left" >
+        <img src="/public/home/desktop/logo-footer.svg" alt="">
+        <nav>
+          <a href="">HOME</a>
+          <a href="">ABOUT US</a>
+          <a href="">CREATE YOUR PLAN</a>
+        </nav>
+      </div><!--content-left-->
+
+      <div class="content-right">
+        <img src="./public/shared/desktop/icon-facebook.svg" alt="">
+        <img src="./public/shared/desktop/icon-twitter.svg" alt="">
+        <img src="./public/shared/desktop/icon-instagram.svg" alt="">
+      </div><!--content-right-->
+      
+    </div><!--container-->
+  </footer>
 </body>
 </html>
