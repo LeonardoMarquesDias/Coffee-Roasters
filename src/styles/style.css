@@ -5,9 +5,9 @@ header {
 }
 
 header .container {
-  max-width: 1280px;
   width: 90%;
   margin: auto;
+  max-width: 1280px;
   
   display: flex;
   align-items: center;
@@ -24,19 +24,16 @@ header nav a {
 
             /* HERO */ 
 
-section.hero {
-  margin-bottom: 5rem;
-}
 
-section.hero .container {
-  max-width: 1280px;
+section.hero .container { 
   width: 90%;
   height: 600px;
+  max-width: 1280px;
 
+  margin: auto;
   display: flex;
   align-items: center;
-  margin: auto;
-
+  
   background-image: url(/public/home/desktop/image-hero-coffeepress.jpg);
   background-size: cover;
   background-size: 100% 100%;
@@ -45,13 +42,16 @@ section.hero .container {
 
 section.hero .content {
   width: 85%;
-  max-width: 50%;
-  padding-left: 5rem;
+  margin: auto;
   flex-direction: column;
 }
 
+section.hero .content h3 {
+  width: 500px;
+}
+
 section.hero .content p {
-  width: 70%;
+  width: 400px;
   margin: 1.5rem 0rem;
   line-height: 1.5rem;
   color: var(--text);
@@ -65,52 +65,57 @@ section.hero button {
   background-color: var(--green);
 }
 
-            /* COLLETION */
+            /* COLLETION-ITEMS */
 
-section.collection {
-  margin-bottom: 8rem;
+section.collection-itens {
+  margin: 5rem 0rem;
 }
 
-section.collection .container {
+section.collection-itens .container {
   max-width: 1280px;
   max-width: 90%;
   margin: auto;
 }
 
-section.collection .content {
+section.collection-itens .content {
   max-width: 85%;
   margin: auto;
 }
 
-section.collection .container-your {
+section.collection-itens .container-your {
   width: 100%;
   text-align: center;
 }
 
-section.collection .container div span { 
+section.collection-itens .container div span { 
   font-family: 'Fraunces', serif;
   font-weight: 600;
   font-size: 11vw;
-  text-align: center;
+  height: 30px;
 
   background: -webkit-linear-gradient(#c0c0c0, rgb(255, 255, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-section.collection .content-itens {
-  width: 100%;
+section.collection-itens .container div {
   text-align: center;
+  height: auto;
+}
 
+section.collection-itens .content-itens {
+  width: 100%;
   margin-top: -4rem;
+  text-align: center;
   position: relative;
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
   justify-content: space-between; 
 }
 
-section.collection .container .content-itens img {
+section.collection-itens .container .content-itens img {
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -118,7 +123,7 @@ section.collection .container .content-itens img {
   margin-bottom: 1rem;
 }
 
-section.collection .container .content-itens p {
+section.collection-itens .container .content-itens p {
   font-weight: 400;
   line-height: 1.5rem;
   margin-top: 1.25rem;
@@ -160,7 +165,7 @@ section.choose-us .content p {
   color: var(--text);
 }
 
-section.choose-us .content-1 {
+section.choose-us .content-grid {
   display: grid;
   grid-template-columns: repeat(3, 26.5%);
   grid-column-gap: 1.8rem;
@@ -169,28 +174,28 @@ section.choose-us .content-1 {
   justify-content: center;
 }
 
-section.choose-us .content-1 > div {
+section.choose-us .content-grid div {
   background-color: var(--green);
   border-radius: 5px;
 }
 
-section.choose-us .content-1 h1 {
+section.choose-us .content-grid h1 {
   color: var(--title-light)
 }
 
-section.choose-us .content-1 p {
+section.choose-us .content-grid p {
   max-width: 80%;
 }
 
-section.choose-us .content-1 img {
+section.choose-us .content-grid img {
   width: 4.438rem;
-  margin: 4rem 0rem;
+  margin: 3rem 0rem;
   align-items: center;
   background-image: 100% 100%;
 }
 
-section.choose-us .content-1 div {
-  height: 25rem;
+section.choose-us .content-grid div {
+  height: 22rem;
   margin-top: 2.5rem;
 }
 
