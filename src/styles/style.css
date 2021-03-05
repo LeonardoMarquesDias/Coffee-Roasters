@@ -53,81 +53,59 @@ section.hero .content h3 {
 section.hero .content p {
   width: 400px;
   margin: 1.5rem 0rem;
-  line-height: 1.5rem;
-  color: var(--text);
 }
 
 section.hero button {
   padding: 0.7rem 1.5rem;
   border: 1px solid var(--green);
   border-radius: 5px;
-  color: var(--text);
   background-color: var(--green);
 }
 
             /* COLLETION-ITEMS */
 
 section.collection-itens {
-  margin: 5rem 0rem;
+  margin: 7rem 0rem;
 }
 
 section.collection-itens .container {
   max-width: 1280px;
-  max-width: 90%;
+  width: 90%;
   margin: auto;
 }
 
 section.collection-itens .content {
-  max-width: 85%;
+  width: 85%;
   margin: auto;
-}
-
-section.collection-itens .container-your {
-  width: 100%;
-  text-align: center;
 }
 
 section.collection-itens .container div span { 
   font-family: 'Fraunces', serif;
   font-weight: 600;
   font-size: 11vw;
-  height: 30px;
 
   background: -webkit-linear-gradient(#c0c0c0, rgb(255, 255, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-section.collection-itens .container div {
-  text-align: center;
-  height: auto;
-}
-
 section.collection-itens .content-itens {
-  width: 100%;
   margin-top: -4rem;
   text-align: center;
-  position: relative;
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
   justify-content: space-between; 
 }
 
 section.collection-itens .container .content-itens img {
   width: 100%;
   align-items: center;
-  justify-content: center;
-  padding: 5px;
-  margin-bottom: 1rem;
 }
 
 section.collection-itens .container .content-itens p {
-  font-weight: 400;
-  line-height: 1.5rem;
-  margin-top: 1.25rem;
-  font-size: 1vw;
+  margin: 1.25rem 0rem;
+  padding-bottom: 3rem;
   color: var(--title-text-dark);
 }
 
@@ -155,21 +133,19 @@ section.choose-us .content h2 {
 }
 
 section.choose-us .content p:nth-child(2) {
-  width: 40%;
+  width: 50%;
   padding: 2rem 0rem;
 }
 
 section.choose-us .content p {
   margin: auto;
   padding: 1.25rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  color: var(--text);
+  font-weight: 400; 
 }
 
 section.choose-us .content-grid {
   display: grid;
-  grid-template-columns: repeat(3, 32%);
+  grid-template-columns: repeat(3, 31.5%);
   justify-content: space-between;
   text-align: center;
 }
@@ -228,7 +204,7 @@ section.how-works .container h1:first-child {
 
 section.how-works .content > div {
   display: grid;
-  grid-template-columns: repeat(3, 34.5%);
+  grid-template-columns: repeat(3, 34%);
 
   align-items: left;
   justify-content: left;
@@ -261,18 +237,17 @@ section.how-works .content-grid span {
   font-weight: 600;
   font-size: 4rem;
   color: var(--number-line);
-
 }
+
 section.how-works .content-grid h1 {
   width: 150px;
   padding-top: 1.5rem;
 }
 
 section.how-works .content-grid p {
-  width: 90%;
+  width: 80%;
   padding: 2.5rem 0rem;
   font-weight: 400;
-  line-height: 1.5rem;
   color: var(--title-text-dark);
 }
 
@@ -308,25 +283,22 @@ footer .content-left {
 }
 
 footer .content-left nav a {
-  margin-left: 0.6rem;
-  padding: 0.6rem 0rem 0.6rem 0.9rem;
+  padding-left: 2rem;
   font-size: 0.7rem;
   font-weight: 600;
   color: var(--grey);
 }
 
 footer .content-left img {
-  width: 200px;
-  height: 26px;
-  
+  margin-right: 3rem;
+  width: 12.5rem;
+  height: 1.6rem;
 }
 
 footer .content-right img {
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
-            /* MAIN */
-
-main {
-  padding-bottom: 3rem;
+.footer-space {
+  height: 4rem;
 }
