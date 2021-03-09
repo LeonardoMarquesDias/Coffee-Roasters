@@ -62,24 +62,28 @@ section.hero button {
   background-color: var(--green);
 }
 
-            /* COLLETION-ITEMS */
+            /* COLLETION-COFFEES */
 
-section.collection-itens {
+section.collection-coffees {
   margin: 7rem 0rem;
 }
 
-section.collection-itens .container {
+section.collection-coffees .container {
   max-width: 1280px;
   width: 90%;
   margin: auto;
 }
 
-section.collection-itens .content {
+section.collection-coffees .content {
   width: 85%;
   margin: auto;
 }
 
-section.collection-itens .container div span { 
+section.collection-coffees .content div {
+  text-align: center;
+}
+
+section.collection-coffees .container div span { 
   font-family: 'Fraunces', serif;
   font-weight: 600;
   font-size: 11vw;
@@ -89,7 +93,7 @@ section.collection-itens .container div span {
   -webkit-text-fill-color: transparent;
 }
 
-section.collection-itens .content-itens {
+section.collection-coffees .content-itens {
   margin-top: -4rem;
   text-align: center;
 
@@ -98,12 +102,12 @@ section.collection-itens .content-itens {
   justify-content: space-between; 
 }
 
-section.collection-itens .container .content-itens img {
+section.collection-coffees .container .content-itens img {
   width: 100%;
   align-items: center;
 }
 
-section.collection-itens .container .content-itens p {
+section.collection-coffees .container .content-itens p {
   margin: 1.25rem 0rem;
   padding-bottom: 3rem;
   color: var(--title-text-dark);
@@ -307,7 +311,30 @@ footer .content-right img {
             /*RESPOSIVIDADE*/
 
 
-@media screen and (min-width: 631px) and (max-width: 1000px)
+@media screen and (max-width: 940px) {
+  
+  section.collection-coffees .content-itens {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  section.collection-coffees .content-itens .item {
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+  }
+
+  section.collection-coffees .container div span {
+    font-size: 11vw;
+  }
+
+  section.collection-coffees .content-item {
+    margin-top: 4rem;
+  }
+}
 
 
-@media screen and (max-width: 630px) 
+@media screen and (max-width: 630px) {
+
+}
