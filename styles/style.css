@@ -27,7 +27,7 @@ header nav a {
 
 section.hero .container { 
   width: 90%;
-  height: 600px;
+  height: 37.5rem;
   max-width: 1280px;
 
   margin: auto;
@@ -47,11 +47,11 @@ section.hero .content {
 }
 
 section.hero .content h3 {
-  width: 500px;
+  width: 31.25rem;
 }
 
 section.hero .content p {
-  width: 400px;
+  width: 25rem;
   margin: 1.5rem 0rem;
 }
 
@@ -65,7 +65,7 @@ section.hero button {
             /* COLLETION-COFFEES */
 
 section.collection-coffees {
-  margin: 7rem 0rem;
+  margin: 8rem 0rem;
 }
 
 section.collection-coffees .container {
@@ -87,6 +87,7 @@ section.collection-coffees .container div span {
   font-family: 'Fraunces', serif;
   font-weight: 600;
   font-size: 11vw;
+  
 
   background: -webkit-linear-gradient(#c0c0c0, rgb(255, 255, 255));
   -webkit-background-clip: text;
@@ -94,7 +95,7 @@ section.collection-coffees .container div span {
 }
 
 section.collection-coffees .content-itens {
-  margin-top: -4rem;
+  margin-top: -3rem;
   text-align: center;
 
   display: grid;
@@ -107,9 +108,15 @@ section.collection-coffees .container .content-itens img {
   align-items: center;
 }
 
-section.collection-coffees .container .content-itens p {
-  margin: 1.25rem 0rem;
-  padding-bottom: 3rem;
+section.collection-coffees .container .content-itens .second-content h1 {
+  padding: 0rem 1rem;
+}
+
+section.collection-coffees .container .content-itens .second-content p {
+  width: 12.5rem;
+  margin: auto;
+  padding: 0rem 1rem;
+  margin-top: 1.25rem;
   color: var(--title-text-dark);
 }
 
@@ -175,7 +182,7 @@ section.choose-us .content-grid img {
 }
 
 section.choose-us .content-grid .content-right img {
-  padding-top: 1.5rem;
+  padding-top: 1.4rem;
 }
 
 section.choose-us .content-grid div {
@@ -315,22 +322,46 @@ footer .content-right img {
   
   section.collection-coffees .content-itens {
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    width: 100%;
   }
 
   section.collection-coffees .content-itens .item {
     display: flex;
+    margin: auto;
+    height: 12rem;
     align-items: center;
-    
-    justify-content: space-between;
+  }
+  
+  section.collection-coffees .content {
+    width: 100%;
+    margin: auto;
+  }
+
+  section.collection-coffees .content-itens {
+    margin-top: -5rem;
   }
 
   section.collection-coffees .container div span {
-    font-size: 11vw;
+    font-size: 13.8vw;
   }
 
-  section.collection-coffees .content-item {
-    margin-top: 4rem;
+  section.collection-coffees .content-itens .item .first-content img {
+    width: 13rem;
+    padding-top: 2rem;
+  }
+
+  section.collection-coffees .content-itens .item .second-content {
+    text-align: left;
+  }
+
+  section.collection-coffees .content-itens .item .second-content p {
+    width: 20rem;
+  }
+
+  section.collection-coffees .content-itens .item .first-content {
+    justify-content: center;
+    align-items: center;
+    padding-right: 4rem;
   }
 }
 
