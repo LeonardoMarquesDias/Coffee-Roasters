@@ -88,7 +88,7 @@ section.collection-coffees .container div span {
   font-family: 'Fraunces', serif;
   font-weight: 600;
   font-size: 11vw;
-  
+  max-width: 1280px;
 
   background: -webkit-linear-gradient(#c0c0c0, rgb(255, 255, 255));
   -webkit-background-clip: text;
@@ -130,13 +130,8 @@ section.choose-us .container {
   max-width: 1280px;
   border-radius: 10px;
   background-color: var(--background-dark);
-}
 
-section.choose-us .content-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 31.5%);
-  justify-content: space-between;
-  text-align: center;
+  z-index: 1;
 }
 
 section.choose-us .content {
@@ -146,51 +141,74 @@ section.choose-us .content {
   text-align: center;
 }
 
-section.choose-us .content h2 {
-  padding-top: 5rem;
+section.choose-us  .content h2 {
+  padding-top: 6rem;
   color: var(--title-light); 
 }
 
-section.choose-us .content p:nth-child(2) {
+section.choose-us  .content > p {
   width: 50%;
+  min-width: 16rem;
   margin: auto;
   padding: 2rem 0rem;
 }
 
-section.choose-us .content .second-content p {
+section.cards-quality {
+  width: 90%;
   margin: auto;
-  padding: 1.25rem;
-  font-weight: 400; 
+  margin-top: -13rem;
+  max-width: 1280px;
+  border-radius: 10px;
+  z-index: 1;
 }
 
+section.cards-quality .container{
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
 
+section.cards-quality .content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 31.5%);
+  justify-content: space-between;
+  text-align: center;
+}
 
-section.choose-us .content-grid div {
+section.cards-quality .content-grid div {
   background-color: var(--green);
   border-radius: 5px;
 }
 
-section.choose-us .content-grid h1 {
-  color: var(--title-light)
+section .cards-quality {
+  z-index: 199;
+  position: relative;
 }
 
-section.choose-us .content-grid p {
+section.cards-quality .content-grid h1 {
+  color: var(--title-light);
+  margin-bottom: 3rem;
+}
+
+section.cards-quality .content-grid #space {
+  padding-top: 1.4rem;
+}
+
+section.cards-quality .content-grid p {
   max-width: 80%;
+  margin: auto;
+  padding-bottom: 3rem;
 }
 
-section.choose-us .content-grid .first-content img {
+section.cards-quality .content-grid .content-cards img {
   width: 4.438rem;
   margin: 3rem 0rem;
   align-items: center;
   background-image: 100% 100%;
 }
 
-section.choose-us .content-grid .content-right ..first-content img {
+section.cards-quality .content-grid .content-cards img {
   padding-top: 1.4rem;
-}
-
-section.choose-us .content-grid div {
-  margin-top: 2.5rem;
 }
 
             /* HOW IT WORKS */
@@ -368,28 +386,43 @@ footer .content-right img {
 
               /*CHOOSE US*/
 
-  section.choose-us .content-grid {
+  section.cards-quality .content-grid {
     grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
+    gap: 1em;
   }
 
-  section.choose-us .content-grid div {
-    
-  }
-
-  section.choose-us .content-grid 
+  section.cards-quality .content-grid 
   .content-left,
   .content-middle,
   .content-right {
     display: flex;
-  
+    align-items: center;
   }
 
+  section.cards-quality .content-grid .content-cards {
+    display: flex;
+  }
+
+  section.cards-quality .content-grid .content-cards .content-img {
+    width: 30%;
+    justify-content: center;
+  }
+
+  section.cards-quality .content-grid p {
+    margin: 0;
+    text-align: left;
+    padding-bottom: 0;
+  }
+
+  section.cards-quality .content-grid .content-cards .second-content > div {
+    align-items: center;
+  }
+
+  section.cards-quality .content-grid h1 {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+
 }
 
-
-@media screen and (max-width: 630px) {
-
-}
