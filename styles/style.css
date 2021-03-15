@@ -56,7 +56,7 @@ section.hero .content p {
 }
 
 section.hero button {
-  padding: 0.7rem 1.5rem;
+  padding: 0.7rem 3rem;
   border: 1px solid var(--green);
   border-radius: 5px;
   background-color: var(--green);
@@ -65,7 +65,7 @@ section.hero button {
             /* COLLETION-COFFEES */
 
 section.collection-coffees {
-  margin: 8rem 0rem;
+  margin: 9rem 0rem 13rem 0rem;
 }
 
 section.collection-coffees .container {
@@ -98,7 +98,6 @@ section.collection-coffees .container div span {
 section.collection-coffees .content-itens {
   margin-top: -3rem;
   text-align: center;
-  
 
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
@@ -142,7 +141,7 @@ section.choose-us .content {
 }
 
 section.choose-us  .content h2 {
-  padding-top: 6rem;
+  padding-top: 5rem;
   color: var(--title-light); 
 }
 
@@ -187,7 +186,7 @@ section .cards-quality {
 
 section.cards-quality .content-grid h1 {
   color: var(--title-light);
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 section.cards-quality .content-grid #space {
@@ -195,26 +194,25 @@ section.cards-quality .content-grid #space {
 }
 
 section.cards-quality .content-grid p {
-  max-width: 80%;
+  width: 80%;
   margin: auto;
   padding-bottom: 3rem;
 }
 
 section.cards-quality .content-grid .content-cards img {
-  width: 4.438rem;
   margin: 3rem 0rem;
   align-items: center;
   background-image: 100% 100%;
 }
 
-section.cards-quality .content-grid .content-cards img {
-  padding-top: 1.4rem;
+#last-img {
+  padding: 1rem 0rem 0.44rem 0rem;
 }
 
             /* HOW IT WORKS */
 
 section.how-works {
-  margin: 15rem 0rem 10rem 0rem;
+  margin: 7rem 0rem 10rem 0rem;
 }
 
 section.how-works .container {
@@ -226,17 +224,16 @@ section.how-works .container {
 section.how-works .content {
   width: 85%;
   margin: auto;
-  max-width: 1280px;
 }
 
 section.how-works .container h1:first-child {
-  margin: 3rem 0rem;
+  margin: 0rem 0rem;
   color: var(--grey);
 }
 
 section.how-works .content > div {
   display: grid;
-  grid-template-columns: repeat(3, 34%);
+  grid-template-columns: repeat(3, 1fr);
 
   align-items: left;
   justify-content: left;
@@ -283,8 +280,8 @@ section.how-works .content-grid p {
   color: var(--title-text-dark);
 }
 
-section.how-works .content-grid button {
-  padding: 0.7rem 1.5rem;
+section.how-works button {
+  padding: 0.7rem 2rem;
   border: 1px solid var(--green);
   border-radius: 5px;
   color: var(--text);
@@ -300,7 +297,7 @@ footer {
   background-color: var(--background-dark);
 }
 
-footer #container {
+footer .container {
   width: 85%;
   margin: auto;
   padding: 1.7rem 0rem;
@@ -391,31 +388,28 @@ footer .content-right img {
     gap: 1em;
   }
 
-  section.cards-quality .content-grid 
-  .content-left,
-  .content-middle,
-  .content-right {
-    display: flex;
-    align-items: center;
-  }
-
   section.cards-quality .content-grid .content-cards {
     display: flex;
+    justify-content: space-between;
   }
 
   section.cards-quality .content-grid .content-cards .content-img {
-    width: 30%;
-    justify-content: center;
+    margin: auto;
+  }
+
+  #last-img {
+    
+  }
+  
+  section.cards-quality .content-grid .content-cards .second-content {
+    width: 55%;
+    margin: auto;
   }
 
   section.cards-quality .content-grid p {
-    margin: 0;
+    margin: initial;
     text-align: left;
-    padding-bottom: 0;
-  }
-
-  section.cards-quality .content-grid .content-cards .second-content > div {
-    align-items: center;
+    padding: 0;
   }
 
   section.cards-quality .content-grid h1 {
@@ -423,6 +417,70 @@ footer .content-right img {
     margin-bottom: 0;
   }
 
+  section.choose-us .content {
+    height: 38rem; 
+  }
 
+  section.cards-quality {
+    margin-top: -19rem;
+  }
+
+  section.cards-quality .content-grid p {
+    
+  }
+
+  #last-img {
+
+  }
+
+  section.choose-us .content > p {
+    width: none;
+  }
+
+  section.how-works .container {
+    margin: auto;
+  }
+
+  section.how-works .container .content {
+    width: 100%;
+  }
+
+              /* FOOTER */
+
+  footer {
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  footer .container  {
+    display: block;
+  }
+
+  footer .content-left{
+    display: block;
+    margin-bottom: 1.3rem;
+  }
+
+  footer .content-left img {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  footer .content-left nav a {
+    padding: 0rem;
+    margin: 0rem 0.5rem;
+    
+  }
+
+  footer .content-right img {
+    margin: 0rem;
+    margin: 0rem 0.5rem;
+  }
+
+  section.how-works .content > div {
+    width: 100%;
+  }
 }
 
