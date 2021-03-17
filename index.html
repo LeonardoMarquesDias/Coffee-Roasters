@@ -12,9 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&display=swap" rel="stylesheet">
 
+
   <link rel="stylesheet" href="./styles/global.css" />
   <link rel="stylesheet" href="./styles/style.css" />
-  <link rel="stylesheet" href="./assets/home/tablet/index.css">
 
   <title>Coffee Roasters</title>
 
@@ -22,20 +22,23 @@
 <body>
   <header>
     <div class="container">
-      <div>
-        <img src="/public/shared/desktop/logo.svg" alt="Logo Coffee">
-      </div>
-      
-      <nav>
-        <a href="./index.html">HOME</a>
-        <a href="./about.html">ABOUT US</a>
-        <a href="#">CREATE YOUR PLAN</a>
-      </nav>
-
-      <nav class="toggle-nav" style="display: none;" >
-        <a href="./index.html">HOME</a>
-        <a href="./src/pages/about.html">ABOUT US</a>
-        <a href="#">CREATE YOUR PLAN</a>
+      <nav class="navbar">
+        <div>
+          <img src="/public/shared/desktop/logo.svg" alt="Logo Coffee">
+        </div>
+       
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT US</a></li>
+            <li><a href="#">CREATE YOUR PLAN</a></li>
+          </ul>
+        </div>
       </nav>
     </div><!--container-->  
   </header>
@@ -55,7 +58,8 @@
 
     <section class="collection-coffees"> 
       <div class="container">
-        <div class="content">         
+        <div class="content"> 
+
           <div> 
             <span>our colletion</span>
           </div>       
@@ -66,7 +70,7 @@
                 <img src="/public/home/desktop/image-gran-espresso.png" alt="">
               </div><!--left-->
               <div class="second-content">
-                <h1>Gran Espresso</h1>
+                <h1 class="width-h1">Gran Espresso</h1>
                 <p>
                   Light and flavorful blend with cocoa and black pepper for an intense experience.
                 </p>
@@ -108,7 +112,6 @@
                 </p>
               </div><!--right--> 
             </div><!--item-->
-
           </div><!--content-itens-->
         </div><!--content-->
       </div><!--container-->
@@ -212,7 +215,7 @@
               </p>
             </div><!--content-right-->
           </div><!--content-grid-->
-          <button type="button">Create your plan</button> 
+          <div><button>Create your plan</button></div>
         </div><!--content-->
       </div><!--container-->
     </section><!--how-works-->
@@ -237,5 +240,8 @@
     </div><!--container-->
   </footer>
   <div class="footer-space"></div>
+
+  <script src="toggle.js"></script>
 </body>
+  
 </html>

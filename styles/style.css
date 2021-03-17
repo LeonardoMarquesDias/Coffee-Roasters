@@ -7,19 +7,49 @@ header {
 header .container {
   width: 90%;
   margin: auto;
-  max-width: 1280px;
-  
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  max-width: 1280px; 
 }
 
-header nav a {
+.navbar {
+  justify-content: space-between;
+  display: flex;
+  align-items:baseline;
+}
+
+.navbar-links ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar-links ul li a {
   margin-left: 0.6rem;
-  padding: 0.6rem 0rem 0.6rem 0.9rem;
+  padding: 0.6rem 0rem 0rem 0.9rem;
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--grey);
+  transition: 0.3s;
+}
+
+.navbar-links ul li a:hover {
+  color: #333D4B;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
 }
 
             /* HERO */ 
@@ -55,17 +85,25 @@ section.hero .content p {
   margin: 1.5rem 0rem;
 }
 
-section.hero button {
+section button {
   padding: 0.7rem 3rem;
   border: 1px solid var(--green);
   border-radius: 5px;
   background-color: var(--green);
+  transition: 0.7s;
 }
+
+button:hover {
+  color: #FEFCF7;
+  background: #66D2CF;
+  border: 1px solid #66D2CF;
+}
+
 
             /* COLLETION-COFFEES */
 
 section.collection-coffees {
-  margin: 9rem 0rem 13rem 0rem;
+  margin: 6rem 0rem 9rem 0rem;
 }
 
 section.collection-coffees .container {
@@ -89,6 +127,7 @@ section.collection-coffees .container div span {
   font-weight: 600;
   font-size: 11vw;
   max-width: 1280px;
+  white-space: nowrap;
 
   background: -webkit-linear-gradient(#c0c0c0, rgb(255, 255, 255));
   -webkit-background-clip: text;
@@ -113,7 +152,7 @@ section.collection-coffees .container .content-itens .second-content h1 {
 }
 
 section.collection-coffees .container .content-itens .second-content p {
-  width: 12.5rem;
+  width: 90%;
   margin: auto;
   padding: 0rem 1rem;
   margin-top: 1.25rem;
@@ -155,7 +194,7 @@ section.choose-us  .content > p {
 section.cards-quality {
   width: 90%;
   margin: auto;
-  margin-top: -13rem;
+  margin-top: -12rem;
   max-width: 1280px;
   border-radius: 10px;
   z-index: 1;
@@ -180,7 +219,7 @@ section.cards-quality .content-grid div {
 }
 
 section .cards-quality {
-  z-index: 199;
+  z-index: 999;
   position: relative;
 }
 
@@ -212,7 +251,7 @@ section.cards-quality .content-grid .content-cards img {
             /* HOW IT WORKS */
 
 section.how-works {
-  margin: 7rem 0rem 10rem 0rem;
+  margin: 10rem 0rem;
 }
 
 section.how-works .container {
@@ -227,7 +266,7 @@ section.how-works .content {
 }
 
 section.how-works .container h1:first-child {
-  margin: 0rem 0rem;
+  margin: 0rem 0rem 2rem 0rem;
   color: var(--grey);
 }
 
@@ -281,11 +320,19 @@ section.how-works .content-grid p {
 }
 
 section.how-works button {
+  width: 15rem;
   padding: 0.7rem 2rem;
   border: 1px solid var(--green);
   border-radius: 5px;
   color: var(--text);
   background-color: var(--green);
+  transition: 0.3s;
+}
+
+section.how-works button:hover {
+  color: #FEFCF7;
+  background: #66D2CF;
+  border: 1px solid #66D2CF;
 }
 
             /* FOOTER */
@@ -300,7 +347,7 @@ footer {
 footer .container {
   width: 85%;
   margin: auto;
-  padding: 1.7rem 0rem;
+  padding: 2rem 0rem;
 
   display: flex;
   align-items: center;
@@ -316,29 +363,39 @@ footer .content-left nav a {
   font-size: 0.7rem;
   font-weight: 600;
   color: var(--grey);
+  transition: 0.7s;
+}
+
+footer .content-left nav a:hover {
+  color: var(--title-light);
 }
 
 footer .content-left img {
   margin-right: 3rem;
-  width: 12.5rem;
+  width: 90%;
   height: 1.6rem;
+  cursor: pointer;
 }
 
 footer .content-right img {
   margin-left: 2rem;
+  transition: 0.3s;
 }
 
 .footer-space {
-  height: 4rem;
+  height: 3rem;
 }
 
 
             /*RESPOSIVIDADE*/
 
-            /*OUR COLLECTION*/           
+            /*OUR COLLECTION*/ 
+            
 
-@media screen and (max-width: 940px) {
-  
+
+@media screen and (max-width: 1106px) {
+
+
   section.collection-coffees .content-itens {
     grid-template-columns: 1fr;
     margin: auto;
@@ -352,6 +409,8 @@ footer .content-right img {
     display: flex;
     margin: auto;
     align-items: center;
+    justify-content:space-evenly;
+    width: 100%;
   }
   
   section.collection-coffees .content-itens {
@@ -370,18 +429,32 @@ footer .content-right img {
   section.collection-coffees .content-itens .item .first-content {
     justify-content: center;
     align-items: center;
-    padding-right: 4rem;
   }
 
   section.collection-coffees .content-itens .item .second-content {
     text-align: left;
+    width: 50%;
   }
 
-  section.collection-coffees .content-itens .item .second-content p {
+  section.collection-coffees .container .content-itens .second-content p {
     width: 20rem;
+    margin: 1rem 0rem 0rem 0rem;
   }
 
-              /*CHOOSE US*/
+
+
+
+    @media screen and (max-width: 940px) {
+
+  html {
+    font-size: 80%;
+  }
+   
+  section.hero .container {
+    background-image: url(/public/home/desktop/image-hero-coffeepress-query.jpg); 
+    background-size: cover;
+    background-size: 100% 100%;
+  }
 
   section.cards-quality .content-grid {
     grid-template-columns: 1fr;
@@ -391,19 +464,12 @@ footer .content-right img {
   section.cards-quality .content-grid .content-cards {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   section.cards-quality .content-grid .content-cards .content-img {
     margin: auto;
-  }
-
-  #last-img {
-    
-  }
-  
-  section.cards-quality .content-grid .content-cards .second-content {
-    width: 55%;
-    margin: auto;
+    width: 50%;
   }
 
   section.cards-quality .content-grid p {
@@ -418,19 +484,11 @@ footer .content-right img {
   }
 
   section.choose-us .content {
-    height: 38rem; 
+    height: 35rem; 
   }
 
   section.cards-quality {
-    margin-top: -19rem;
-  }
-
-  section.cards-quality .content-grid p {
-    
-  }
-
-  #last-img {
-
+    margin-top: -17.5rem;
   }
 
   section.choose-us .content > p {
@@ -471,7 +529,6 @@ footer .content-right img {
   footer .content-left nav a {
     padding: 0rem;
     margin: 0rem 0.5rem;
-    
   }
 
   footer .content-right img {
@@ -482,5 +539,191 @@ footer .content-right img {
   section.how-works .content > div {
     width: 100%;
   }
+
+  section.choose-us .content > p {
+    width: 80%;
+  }
+
+  section.how-works {
+    margin: 6rem 0rem;
+  }
 }
+
+@media screen and (max-width: 582px) {
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links li {
+    list-style: none;
+  }
+
+  .navbar-links li
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  section.collection-coffees .content-itens .item .second-content {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+
+
+  section.collection-coffees {
+    margin: 6rem 0rem 9rem 0rem;
+  }
+  
+  section.collection-coffees .container {
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+  }
+  
+  section.collection-coffees .content {
+    width: 85%;
+    margin: auto;
+    align-items: center;
+  }
+  
+  section.collection-coffees .content div {
+    text-align: center;
+  }
+  
+  section.collection-coffees .container div span { 
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 11vw;
+    max-width: 1280px;
+    white-space: nowrap;
+  
+    background: -webkit-linear-gradient(#c0c0c0, rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  section.collection-coffees .content-itens {
+    margin-top: -3rem;
+    text-align: center;
+  
+    display: grid;
+    grid-template-columns: 1fr; 
+    row-gap: 2rem;
+  }
+
+  section.collection-coffees .content-itens .item {
+    display: block;
+  }
+  
+  section.collection-coffees .container .content-itens img {
+    width: 100%;
+    align-items: center;
+  }
+  
+  section.collection-coffees .container .content-itens .second-content h1 {
+    padding: 0rem 1rem;
+  }
+  
+  section.collection-coffees .container .content-itens .second-content p {
+    width: 90%;
+    margin: auto;
+    padding: 0rem 1rem;
+    margin-top: 1.25rem;
+    color: var(--title-text-dark);
+  }
+
+  
+
+              /* WHAY CHOOSE US */
+
+
+  section.choose-us .content {
+    height: 55rem;
+  }
+  
+  section.cards-quality {
+    margin-top: -35rem;
+  }
+  
+  section.choose-us  .content > p {
+    width: 80%;
+  }
+
+  
+  
+  section.cards-quality .container div{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  section.cards-quality .content-grid {
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  section.cards-quality .content-grid .content-cards {
+    display: block;
+  }
+  
+  section.cards-quality .content-grid h1 {
+    text-align: center;
+  }
+
+  section.cards-quality .content-grid p {
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+  
+
+  /* HOW-WORKS*/
+
+  
+  section.how-works .content > div {
+    display: grid;
+    grid-template-columns: 1fr;
+  
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  section.how-works .content-grid 
+    .circle, 
+    .line, 
+    .last-line {
+        display: none;
+  }
+  
+  section.how-works .content-grid h1 {
+    margin: auto;
+    width: 100%;
+    padding: 0rem;
+    margin-bottom: 1rem;
+  }
+  
+  section.how-works .content-grid p {
+    width: 80%;
+    padding: 0rem;
+    margin: auto;
+  }
+
+  section.how-works button {
+    margin: auto;
+    margin-top: 5rem;
+  }
+
+  
+}
+
+
+
+
+
 
