@@ -42,11 +42,25 @@ body, input, textarea, button {
   font: 400 1rem "Barlow", sans-serif;
 }
 
-button {
-  font-size: 1.2rem;
-  cursor: pointer;
-  font-family: 'Fraunces', serif;
+#button {
   color: var(--text);
+  border: 1px solid var(--green);
+  background-color: var(--green);
+  border-radius: 5px;
+
+  font-family: 'Fraunces', serif;
+  font-size: 1.2rem;
+  padding: 0.7rem 3rem;
+  white-space: nowrap;
+
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+#button:hover {
+  color: #FEFCF7;
+  background: #66D2CF;
+  border: 1px solid #66D2CF;
 }
 
 a {
